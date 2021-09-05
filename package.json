@@ -1,0 +1,16 @@
+{
+  "name": "project-webpack-portfolio",
+  "version": "1.0.0",
+  "description": "This project building I will build a mini portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^4.8.0",
+    "webpack": "^5.52.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson Steven",
+  "license": "MIT"
+}
