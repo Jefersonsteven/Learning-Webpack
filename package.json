@@ -4,6 +4,7 @@
   "description": "This project building I will build a mini portfolio",
   "main": "index.js",
   "dependencies": {
+    "node": "^16.6.1",
     "webpack-cli": "^4.8.0"
   },
   "devDependencies": {
@@ -23,13 +24,16 @@
     "sass-loader": "12.1.0",
     "terser-webpack-plugin": "^5.2.3",
     "url-loader": "^4.1.1",
-    "webpack": "^5.52.0"
+    "webpack": "^5.52.1",
+    "webpack-dev-server": "^4.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./scripts/create-env.js  &&  webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
-    "build --watch": "webpack --watch --config webpack.config.js"
+    "build --watch": "webpack --watch --config webpack.config.js",
+    "dev --watch": "webpack --watch --config webpack.config.dev.js",
+    "start": "webpack serve --config webpack.config.dev.js"
   },
   "author": "Jefferson Steven",
   "license": "MIT"
